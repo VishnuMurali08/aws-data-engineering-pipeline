@@ -13,21 +13,20 @@ AWS Glue: Manages database schemas and performs ETL operations.
 AWS SageMaker: Hosts and runs the sentiment analysis model.
 AWS QuickSight: Provides visualization in the form of a dashboard.
 ## Components
-### 1. Kafka Producers and Consumers
+#### 1. Kafka Producers and Consumers
 Producers: Retrieve data from APIs and publish to Kafka topics.
 Consumers: Subscribe to topics to retrieve messages and store them in S3 buckets.
-### 2. AWS Glue
+#### 2. AWS Glue
 Crawlers: Detect the schema of S3 data.
 ETL Jobs: Clean and prepare data for analysis.
-### 3. Sentiment Analysis
+#### 3. Sentiment Analysis
 Model Training: Train a BERT model for sentiment analysis.
 Deployment: Deploy the model in SageMaker for inferencing.
-###4. Dashboard
-Visualize sentiment data using AWS QuickSight.
+
 ## Automation with AWS Lambda
-Trigger Glue Jobs: Activates on updates in S3 buckets.
-Trigger BERT Endpoint: Runs when new data is available for analysis.
-QuickSight Data Refresh: Updates the dashboard upon new output generation.
+#### Trigger Glue Jobs: Activates on updates in S3 buckets.
+#### Trigger BERT Endpoint: Runs when new data is available for analysis.
+#### QuickSight Data Refresh: Updates the dashboard upon new output generation.
 
 ## Dashboard
 Explanation of the dashboard components and insights provided by the visualizations.
