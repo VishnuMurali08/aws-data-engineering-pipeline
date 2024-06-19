@@ -1,5 +1,5 @@
 ## Real-Time Sentiment Analysis Pipeline for COVID-19 Vaccine Sentiments
-#Overview
+# Overview
 This project harnesses the power of Apache Kafka, AWS services, and machine learning to perform real-time sentiment analysis on COVID-19 vaccine discussions from Reddit and news sources. The pipeline automates the collection, processing, and analysis of data, culminating in a sentiment-enriched dashboard.
 
 Architecture
