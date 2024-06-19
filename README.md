@@ -24,9 +24,12 @@ Model Training: Train a BERT model for sentiment analysis.
 Deployment: Deploy the model in SageMaker for inferencing.
 
 ## Automation with AWS Lambda
-#### Trigger Glue Jobs: Activates on updates in S3 buckets.
-#### Trigger BERT Endpoint: Runs when new data is available for analysis.
-#### QuickSight Data Refresh: Updates the dashboard upon new output generation.
+#### 1.Trigger Glue Jobs
+Activates on updates in S3 buckets.
+#### 2.Trigger BERT Endpoint
+Runs when new data is available for analysis.
+#### 3.QuickSight Data Refresh
+Updates the dashboard upon new output generation.
 
 ## Dashboard
 Explanation of the dashboard components and insights provided by the visualizations.
