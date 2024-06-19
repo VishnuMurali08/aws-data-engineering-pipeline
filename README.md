@@ -2,6 +2,9 @@
 ## Overview
 This project harnesses the power of Apache Kafka, AWS services, and machine learning to perform real-time sentiment analysis on COVID-19 vaccine discussions from Reddit and news sources. The pipeline automates the collection, processing, and analysis of data, culminating in a sentiment-enriched dashboard.
 
+## Flowchart
+<img width="556" alt="image" src="https://github.com/VishnuMurali08/aws-data-engineering-pipeline/assets/97467016/701e2641-120f-4b06-b27e-1c783ce32231">
+
 ## Architecture
 Data Collection: Scripts fetch data from Reddit and various news APIs.
 Apache Kafka: Manages real-time message queueing through reddit_topic and news_topic.
@@ -14,7 +17,7 @@ AWS QuickSight: Provides visualization in the form of a dashboard.
 Producers: Retrieve data from APIs and publish to Kafka topics.
 Consumers: Subscribe to topics to retrieve messages and store them in S3 buckets.
 ### 2. AWS Glue
-### Crawlers: Detect the schema of S3 data.
+Crawlers: Detect the schema of S3 data.
 ETL Jobs: Clean and prepare data for analysis.
 ### 3. Sentiment Analysis
 Model Training: Train a BERT model for sentiment analysis.
@@ -25,21 +28,8 @@ Visualize sentiment data using AWS QuickSight.
 Trigger Glue Jobs: Activates on updates in S3 buckets.
 Trigger BERT Endpoint: Runs when new data is available for analysis.
 QuickSight Data Refresh: Updates the dashboard upon new output generation.
-Usage
-Setup
-Details on setting up the necessary AWS services, Kafka configuration, and API connections.
 
-Running the Scripts
-Instructions on how to run each component of the pipeline, including Kafka scripts, AWS Glue jobs, and the deployment of the SageMaker model.
-
-Dashboard
+## Dashboard
 Explanation of the dashboard components and insights provided by the visualizations.
+<img width="524" alt="image" src="https://github.com/VishnuMurali08/aws-data-engineering-pipeline/assets/97467016/127ff890-b9db-42ba-ad69-cf23504a0da2">
 
-Contributing
-Guidelines for contributing to the project, including code style, pull requests, and issue reporting.
-
-License
-Specify the type of license governing the use and distribution of the project.
-
-Acknowledgements
-Credits to data providers, technology references, and any collaborators.
