@@ -19,9 +19,9 @@ ETL Jobs: Clean and prepare data for analysis.
 ### 3. Sentiment Analysis
 Model Training: Train a BERT model for sentiment analysis.
 Deployment: Deploy the model in SageMaker for inferencing.
-4. Dashboard
+###4. Dashboard
 Visualize sentiment data using AWS QuickSight.
-Automation with AWS Lambda
+## Automation with AWS Lambda
 Trigger Glue Jobs: Activates on updates in S3 buckets.
 Trigger BERT Endpoint: Runs when new data is available for analysis.
 QuickSight Data Refresh: Updates the dashboard upon new output generation.
