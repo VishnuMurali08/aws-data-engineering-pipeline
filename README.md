@@ -3,15 +3,15 @@
 This project harnesses the power of Apache Kafka, AWS services, and machine learning to perform real-time sentiment analysis on COVID-19 vaccine discussions from Reddit and news sources. The pipeline automates the collection, processing, and analysis of data, culminating in a sentiment-enriched dashboard.
 
 ## Flowchart
-<img width="1000" alt="image" src="https://github.com/VishnuMurali08/aws-data-engineering-pipeline/assets/97467016/701e2641-120f-4b06-b27e-1c783ce32231">
+<img width="900" alt="image" src="https://github.com/VishnuMurali08/aws-data-engineering-pipeline/assets/97467016/701e2641-120f-4b06-b27e-1c783ce32231">
 
 ## Architecture
-Data Collection: Scripts fetch data from Reddit and various news APIs.
-Apache Kafka: Manages real-time message queueing through reddit_topic and news_topic.
-AWS S3: Stores raw and processed data.
-AWS Glue: Manages database schemas and performs ETL operations.
-AWS SageMaker: Hosts and runs the sentiment analysis model.
-AWS QuickSight: Provides visualization in the form of a dashboard.
+Data Collection: Scripts for fetching data from Reddit and various news APIs.
+Apache Kafka: Handles real-time message queueing through topics reddit_topic and news_topic.
+AWS S3: Storage for raw and processed data.
+AWS Glue: Database schema management and ETL operations.
+AWS SageMaker: Hosting and execution of the sentiment analysis model.
+AWS QuickSight: Visualization through a dashboard.
 ## Components
 #### 1. Kafka Producers and Consumers
 Producers: Retrieve data from APIs and publish to Kafka topics.
@@ -25,11 +25,11 @@ Deployment: Deploy the model in SageMaker for inferencing.
 
 ## Automation with AWS Lambda
 #### 1.Trigger Glue Jobs
-Activates on updates in S3 buckets.
+Automates the triggering of AWS Glue ETL jobs when new data arrives or updates occur in designated S3 buckets.
 #### 2.Trigger BERT Endpoint
-Runs when new data is available for analysis.
+Automatically invokes the AWS SageMaker hosted BERT sentiment analysis model when new cleaned data files are detected in the combined-clean S3 bucket.
 #### 3.QuickSight Data Refresh
-Updates the dashboard upon new output generation.
+Refreshes the AWS QuickSight dashboard automatically whenever new sentiment analysis results are uploaded to the output-clean S3 bucket.
 
 ## Dashboard
 Explanation of the dashboard components and insights provided by the visualizations.
