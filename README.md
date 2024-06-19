@@ -8,10 +8,13 @@ This project harnesses the power of Apache Kafka, AWS services, and machine lear
 ## Architecture
 - Data Collection: Scripts for fetching data from Reddit and various news APIs.
 - Apache Kafka: Handles real-time message queueing through topics reddit_topic and news_topic.
+- AWS EC2: The Kafka Cluster is hosted on an EC2 instance (kafka-ec2) for handling the incoming data streams. 
 - AWS S3: Storage for raw and processed data.
 - AWS Glue: Database schema management and ETL operations.
 - AWS SageMaker: Hosting and execution of the sentiment analysis model.
 - AWS QuickSight: Visualization through a dashboard.
+- AWS Lambda : Automate the triggering of Glue jobs, SageMaker Endpoint QuickSight dashboard refresh.
+  
 ## Components
 #### 1. Kafka Producers and Consumers
 - Producers: Retrieve data from APIs and publish to Kafka topics.
