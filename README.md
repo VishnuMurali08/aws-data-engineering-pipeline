@@ -3,7 +3,7 @@
 This project harnesses the power of Apache Kafka, AWS services, and machine learning to perform real-time sentiment analysis on COVID-19 vaccine discussions from Reddit and news sources. The pipeline automates the collection, processing, and analysis of data, culminating in a sentiment-enriched dashboard.
 
 ## Flowchart
-<img width="700" alt="image" src="https://github.com/VishnuMurali08/aws-data-engineering-pipeline/assets/97467016/701e2641-120f-4b06-b27e-1c783ce32231">
+<img width="1000" alt="image" src="https://github.com/VishnuMurali08/aws-data-engineering-pipeline/assets/97467016/701e2641-120f-4b06-b27e-1c783ce32231">
 
 ## Architecture
 Data Collection: Scripts fetch data from Reddit and various news APIs.
